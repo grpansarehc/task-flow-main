@@ -7,28 +7,28 @@ Welcome to the central manifest for the **Task Management System**. This project
 Below are the links to the individual repositories for each service.
 
 ### 🖥️ Frontend
-*   **[TaskFlow Client Application](INSERT_FRONTEND_REPO_LINK_HERE)**  
+*   **[TaskFlow Client Application](https://github.com/grpansarehc/taskflow-frontend)**  
     *Tech Stack:* React, TypeScript, TailwindCSS, Vite
     *Description:* The main user interface for the task management system.
 
 ### 🏗️ Infrastructure Services
-*   **[Service Registry (Eureka)](INSERT_REGISTRY_REPO_LINK_HERE)**  
+*   **[Service Registry (Eureka)](https://github.com/ManishShettyHumanCloud/taskflow-service-registry)**  
     *Port:* `8761`  
     *Description:* Handles service discovery for all microservices.
-*   **[API Gateway](INSERT_GATEWAY_REPO_LINK_HERE)**  
+*   **[API Gateway](https://github.com/grpansarehc/taskflow-api-gateway)**  
     *Port:* `8080`  
     *Description:* First point of entry, handles routing and centralized authentication.
 
 ### 🔌 Core Microservices
-*   **[User Management Service (UMS)](INSERT_USER_SERVICE_REPO_LINK_HERE)**  
+*   **[User Management Service (UMS)](https://github.com/ManishShettyHumanCloud/taskflow-user-service)**  
     *Description:* Handles user registration, authentication (JWT), and profile management.
-*   **[Project Service](INSERT_PROJECT_SERVICE_REPO_LINK_HERE)**  
+*   **[Project Service](https://github.com/grpansarehc/taskflow-project-service)**  
     *Description:* Manages project workspaces, teams, and member assignments.
-*   **[Task Service](INSERT_TASK_SERVICE_REPO_LINK_HERE)**  
+*   **[Task Service](https://github.com/ManishShettyHumanCloud/taskflow-task-service)**  
     *Description:* core logic for creating, updating, and assigning tasks/issues.
-*   **[Kanban Service](INSERT_KANBAN_SERVICE_REPO_LINK_HERE)**  
+*   **[Kanban Service](https://github.com/grpansarehc/taskflow-kanban-service)**  
     *Description:* Manages board columns and drag-and-drop state updates.
-*   **[Notification Service](INSERT_NOTIFICATION_SERVICE_REPO_LINK_HERE)**  
+*   **[Notification Service](https://github.com/grpansarehc/taskflow-notification-service)**  
     *Description:* Handles email and system notifications for task updates.
 
 ---
@@ -47,8 +47,4 @@ To run the entire system locally:
     *   Go to `taskflow` directory.
     *   Run `npm install` then `npm run dev`.
 
-## 📐 Architecture
 
-*   **Database**: PostgreSQL / MySQL (per service)
-*   **Communication**: Feign Clients (Synchronous), Kafka/RabbitMQ (Asynchronous - if applicable)
-*   **Security**: JWT Authentication via API Gateway
